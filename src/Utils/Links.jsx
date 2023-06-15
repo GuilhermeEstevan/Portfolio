@@ -1,6 +1,5 @@
-import unsplash from '../assets/unsplash_project.png'
-import magnus from '../assets/magnus_project.png'
-import comfy from '../assets/comfy_project.png'
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
+
 
 
 export const links = [
@@ -21,4 +20,27 @@ export const links = [
   },
 ]
 
+export const contactLinks = [
+
+  {
+    id: 1,
+    url: 'https://github.com/GuilhermeEstevan',
+    icon: <FaGithub />,
+    text: 'Github'
+  },
+  {
+    id: 2,
+    url: 'https://www.linkedin.com/in/guilherme-estevan/',
+    icon: <FaLinkedin />,
+    text: 'Linkedin'
+  },
+  {
+    id: 3,
+    url: 'https://wa.me/5581997311453',
+    icon: <FaWhatsapp />,
+    text: 'Whatsapp'
+  },
+
+
+]
 

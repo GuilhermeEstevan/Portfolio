@@ -82,11 +82,11 @@ color: var(--clr-grey-9);
     margin-top: 4rem;
 }
 
-}
-
 .about-text{
     max-width: 70%;
     text-align: justify;
 }
+}
+
 
 `

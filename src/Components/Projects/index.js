@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const ProjectsContainer = styled.section`
 
-/* height: 80vh; */
+padding-bottom: 3rem ;
 background: #181818;
 color: var(--clr-grey-9);
 
@@ -27,7 +27,7 @@ color: var(--clr-grey-9);
 .title:hover{
 
     .underline{
-        width: 14rem;
+        width: 18rem;
     }
 }
 
