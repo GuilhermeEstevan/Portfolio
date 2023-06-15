@@ -31,6 +31,13 @@ color: var(--clr-grey-9);
     justify-content: space-between;
 }
 
+.links li{
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .links a{
     display: flex;
     align-items: center;
