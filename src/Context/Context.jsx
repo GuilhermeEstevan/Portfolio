@@ -1,5 +1,6 @@
 import { useContext, createContext, useState, useEffect } from "react";
 
+
 const GlobalContext = createContext()
 
 export const GlobalProvider = ({ children }) => {
@@ -34,9 +35,6 @@ export const GlobalProvider = ({ children }) => {
             setAge(age)
         }
     }, [])
-
-
-
 
 
 

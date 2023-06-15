@@ -24,7 +24,7 @@ color: var(--clr-grey-9);
 }
 
 .links{
-    margin: 3rem 0;
+    margin: 1rem 0;
     width: 100%;
     max-width: 300px;
     display: flex;
@@ -50,7 +50,7 @@ color: var(--clr-grey-9);
 
 @media (min-width: 992px) {
 
-    .contact-container{
+.contact-container{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
@@ -58,10 +58,13 @@ color: var(--clr-grey-9);
 
 }
     
+.links{
+    margin: 3rem;
+}
 
-    .links span{
-        font-size: 2.5rem;
-    }
+.links span{
+    font-size: 2.5rem;
+}
 
 
 

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { ToastContainer } from 'react-toastify'
 import {
   About,
   Footer,
@@ -7,6 +7,10 @@ import {
   Projects,
   Sidebar
 } from './Components'
+
+
+
+
 
 function App() {
 
@@ -19,6 +23,7 @@ function App() {
       <About />
       <Projects />
       <Footer />
+      <ToastContainer position='top-center'/>
     </>
   )
 }

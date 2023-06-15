@@ -9,7 +9,7 @@ form {
   align-items: center;
   color: var(--clr-grey-7);
   padding: 2.5rem 2.5rem 0 2.5rem;
-  margin: 1.5rem;
+  margin: 0.5rem;
   position: relative;
   z-index: 1;
 }
@@ -59,6 +59,12 @@ button:hover{
   color: var(--clr-white);
 }
 
+
+
+
+
+
+
 @media (min-width: 680px) {
 
 #email,
@@ -72,6 +78,9 @@ button:hover{
     height: 5rem;
 }
 
+form{
+  margin: 1.5rem;
+}
 
 form:before,
 form:after {
@@ -110,7 +119,6 @@ button{
 
 
 }
-
 
 
 
