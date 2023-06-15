@@ -39,7 +39,8 @@ color: var(--clr-grey-9);
 
 .links span{
     font-size: 1.7rem;  
-    color: #181818;
+    /* color: #181818; */
+    color: var(--clr-grey-7);
 }
 
 .links p {
