@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useForm } from '@formspree/react';
 import { ContactFormContainer } from './index';
 import { toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css';
 
 
 const ContactForm = () => {
