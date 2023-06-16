@@ -43,7 +43,7 @@ text-align: center;
 
 .image-container{
     display: block;
-    margin-bottom: 3.5rem;
+    margin-bottom: 4.5rem;
   }
 
 .image-container img{
