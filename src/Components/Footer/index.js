@@ -61,7 +61,7 @@ color: var(--clr-grey-9);
 .contact-container{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 
 }
