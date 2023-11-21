@@ -49,7 +49,7 @@ color: var(--clr-grey-9);
 
 .knowledges button{
     padding: 1rem;
-    margin: 0 0.5rem;
+    margin: 2 0.5rem;
     border-radius: 2rem;
     border: transparent;
     font-weight: 700;
@@ -58,7 +58,7 @@ color: var(--clr-grey-9);
     color: var(--clr-grey-9);
     max-width: 130px;
     border: 1px solid transparent;
-    transition: var(--transition);
+    transition: 0.3s ease-in-out all;
     text-align: center;
 }
 

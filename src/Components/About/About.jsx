@@ -33,6 +33,10 @@ const About = () => {
               <button>CSS</button>
               <button>JavaScript</button>
               <button>ReactJs</button>
+              <button>TypeScript</button>
+              <button>NodeJs</button>
+              <button>MongoDB</button>
+              <button>MySql</button>
             </div>
           </div>
         </div>
