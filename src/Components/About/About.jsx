@@ -21,11 +21,16 @@ const About = () => {
           <div className="content">
             <div className="about-text">
               <p>
-                {`Sou um desenvolvedor web dedicado a transformar ideias em realidade através da programação.
-              Tenho ${age} anos de idade e sou formado em Engenharia Mecânica, descobri no mundo da programação o que realmente desperta minha vontade de aprender e crescer profissionalmente.`}
+                {`Olá, sou Guilherme Estevan, um desenvolvedor web dedicado a transformar ideias em realidade por meio da programação. Com formação em Engenharia Mecânica, descobri minha verdadeira paixão no mundo da programação.
+
+Iniciei minha jornada autodidata no desenvolvimento web, onde me encantei pelo poder e versatilidade do React. Atualmente, estou aprimorando minhas habilidades por meio do Curso Técnico de Desenvolvimento de Sistemas no Senac, focado em me tornar um profissional mais completo e capacitado.
+
+`}
               </p>
               <p>
-                Iniciei meus estudos sobre desenvolvimento web de forma autodidata, foi quando me identifiquei com React. Atualmente, estou aprimorando minhas habilidades através do Curso Técnico de desenvolvimento de sistemas no Senac, buscando me tornar um profissional mais completo e capacitado.
+                Especializado em tecnologias modernas como React, Node.js, TypeScript e MongoDB, estou animado para aplicar meu conhecimento e contribuir para projetos inovadores. Acredito que a aprendizagem contínua é essencial para o crescimento profissional, e estou comprometido em buscar excelência no desenvolvimento web.
+
+                Estou aberto a oportunidades de colaboração e ansioso para explorar como posso agregar valor aos projetos em que me envolver.
               </p>
             </div>
             <div className="knowledges">
