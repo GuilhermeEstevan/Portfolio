@@ -65,6 +65,7 @@ color: var(--clr-grey-9);
 .knowledges button:hover{
     border-color: var(--clr-grey-9);
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 @media (min-width: 992px) {
