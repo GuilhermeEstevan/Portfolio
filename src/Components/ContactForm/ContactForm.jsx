@@ -42,7 +42,7 @@ const ContactForm = () => {
         onSubmit={handleFormSubmit} >
         <p>Gostaria de me enviar um Email?</p>
 
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email">Seu E-mail</label>
         <input
           type="email"
           id="email"

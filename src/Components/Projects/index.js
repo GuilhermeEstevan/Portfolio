@@ -33,8 +33,9 @@ color: var(--clr-grey-9);
 
 
 .projects-container{
-    display: grid;
-    place-items: center;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 4rem 0;

@@ -2,13 +2,14 @@ import { ProjectsContainer } from "./index"
 import unsplash from '../../assets/unsplash_project.png'
 import comfy from '../../assets/comfy_project.png'
 import magnus from '../../assets/magnus_project.png'
-
+import petLovers from '../../assets/petlovers.print.png'
 
 const Projects = () => {
 
-    const unsplashUrl = 'https://search-images-app-unsplash.netlify.app/'
-    const magnusUrl = 'https://loja-magnus.netlify.app/'
-    const comfyUrl = 'https://comfysloth-project.netlify.app/'
+    const unsplashUrl = 'https://search-images-app-unsplash.netlify.app'
+    const magnusUrl = 'https://loja-magnus.netlify.app'
+    const comfyUrl = 'https://comfysloth-project.netlify.app'
+    const petLoversUrl = "https://petloverswebsite.netlify.app"
 
     return (
         <ProjectsContainer id="projects">
@@ -46,6 +47,16 @@ const Projects = () => {
                         </div>
                         <div className="subtitle">
                             <h5>comfy</h5>
+                        </div>
+                    </div>
+                    <div className="project-box">
+                        <div className="image">
+                            <a href={petLoversUrl} target="blank">
+                                <img src={petLovers} alt="" />
+                            </a>
+                        </div>
+                        <div className="subtitle">
+                            <h5>PetLovers</h5>
                         </div>
                     </div>
                 </div>

@@ -41,7 +41,7 @@ Iniciei minha jornada autodidata no desenvolvimento web, onde me encantei pelo p
               <button>TypeScript</button>
               <button>NodeJs</button>
               <button>MongoDB</button>
-              <button>MySql</button>
+              <button>MySQL</button>
             </div>
           </div>
         </div>

@@ -40,11 +40,11 @@ color: var(--clr-grey-9);
     width: 100%;
     max-width: 600px;
     margin: 3rem 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 1rem;
-    
+    gap: 1rem;
 }
 
 .knowledges button{
