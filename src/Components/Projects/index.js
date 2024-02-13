@@ -43,6 +43,7 @@ color: var(--clr-grey-9);
 
 .project-box{
     transition:var(--transition) ;
+    border-radius: var(--radius);
 }
 
 .image{
@@ -50,9 +51,11 @@ color: var(--clr-grey-9);
     background: var(--clr-black);
     border-radius: var(--radius);
 }
+
 .project-box .image img{
     height: 150px;
     width: 220px;
+    border-radius: var(--radius);
 }
 
 

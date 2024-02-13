@@ -42,6 +42,8 @@ Iniciei minha jornada autodidata no desenvolvimento web, onde me encantei pelo p
               <button>NodeJs</button>
               <button>MongoDB</button>
               <button>MySQL</button>
+              <button>Java</button>
+              <button>Spring Boot</button>
             </div>
           </div>
         </div>
