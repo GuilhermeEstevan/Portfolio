@@ -21,16 +21,13 @@ const About = () => {
           <div className="content">
             <div className="about-text">
               <p>
-                {`Olá, sou Guilherme Estevan, um desenvolvedor web dedicado a transformar ideias em realidade por meio da programação. Com formação em Engenharia Mecânica, descobri minha verdadeira paixão no mundo da programação.
-
-Iniciei minha jornada autodidata no desenvolvimento web, onde me encantei pelo poder e versatilidade do React. Atualmente, estou aprimorando minhas habilidades por meio do Curso Técnico de Desenvolvimento de Sistemas no Senac, focado em me tornar um profissional mais completo e capacitado.
-
-`}
+                Desenvolvedor web, formado em Engenharia Mecânica e cursando técnico de Desenvolvimento de sistemas.
               </p>
               <p>
-                Especializado em tecnologias modernas como React, Node.js, TypeScript e MongoDB, estou animado para aplicar meu conhecimento e contribuir para projetos inovadores. Acredito que a aprendizagem contínua é essencial para o crescimento profissional, e estou comprometido em buscar excelência no desenvolvimento web.
-
-                Estou aberto a oportunidades de colaboração e ansioso para explorar como posso agregar valor aos projetos em que me envolver.
+                Iniciei minha jornada autodidata no desenvolvimento web, onde me encantei pelo poder e versatilidade do React. Atualmente, estou aprimorando minhas habilidades por meio do Curso Técnico de Desenvolvimento de Sistemas no Senac, focado em me tornar um profissional mais completo e capacitado.
+              </p>
+              <p>
+                Especializado em tecnologias modernas como React, Node.js, TypeScript e MongoDB e desenvolvendo meus conhecimentos em Java, estou animado para aplicar meu conhecimento e contribuir para projetos inovadores. Acredito que a aprendizagem contínua é essencial para o crescimento profissional, e estou comprometido em buscar excelência no desenvolvimento web
               </p>
             </div>
             <div className="knowledges">
