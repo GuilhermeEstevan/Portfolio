@@ -16,7 +16,7 @@ const Wrapper = styled.section`
     position: absolute;
     font-size: 2rem;
     top: 2%;
-    left: 5%;
+    right: 5%;
     color: var(--clr-slate-9);
     cursor: pointer;
   }

@@ -9,31 +9,31 @@ export const links = [
   {
     id: 1,
     text: 'Home',
-    url: '#home',
+    url: '/',
     icon: <IoHomeSharp />
   },
   {
     id: 2,
     text: 'Sobre',
-    url: '#about',
+    url: 'about',
     icon: <FaUserAlt />
   },
   {
     id: 3,
     text: 'Projetos',
-    url: '#projects',
+    url: 'projects',
     icon: <MdOutlineWork />
   },
   {
     id: 4,
     text: 'Tecnologias',
-    url: '#tech',
+    url: 'tech',
     icon: <IoCodeSlash />
   },
   {
     id: 5,
     text: 'Contato',
-    url: '#contact',
+    url: 'contact',
     icon: <TiMessages />
   },
 ]

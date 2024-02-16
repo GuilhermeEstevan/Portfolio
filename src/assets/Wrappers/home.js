@@ -6,11 +6,9 @@ export const Wrapper = styled.section`
 height: 100vh;
 width: 100%;
 display: flex;
-color: var(--clr-slate-10);
+color: var(--clr-slate-11);
 background-color: var(--clr-primary-1);
 text-align: center;
-
-
 
 
 .hero-content {
@@ -63,6 +61,25 @@ p{
   max-width: 600px;
 
 }
+
+.about-btn{
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 130px;
+  cursor: pointer;
+  padding: 6px 16px;
+  border-radius: 1rem;
+  background-color: var(--clr-primary-8);
+  color: var(--clr-primary-2);
+  transition: var(--transition);
+} 
+
+.about-btn:hover {
+  background-color: var(--clr-primary-7);
+  color: var(--clr-primary-4); 
+}
+
 } 
 
 @media (min-width: 480px) {

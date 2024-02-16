@@ -1,9 +1,9 @@
-import { Wrapper } from '../../assets/Wrappers/hero';
-import selfie from '../../assets/images/Selfie.jpg'
-import Typewriter from "../../Utils/TypeWriter";
+import { Wrapper } from '../assets/Wrappers/home';
+import selfie from '../assets/images/selfie.jpg'
+import Typewriter from "../Utils/TypeWriter";
+import { Button } from "@radix-ui/themes"
 
-
-const Hero = () => {
+const Home = () => {
 
 
   return (
@@ -19,6 +19,7 @@ const Hero = () => {
           <p>
             Sou um desenvolvedor web altamente adaptável e ávido por aprendizado, especializado na criação de sites e aplicações web que se destacam pelo desempenho superior e oferecem uma experiência de usuário excepcional.
           </p>
+          <Button variant="soft" className='about-btn'>Sobre Mim</Button>
         </div>
         <div className="image-container">
           <img src={selfie} alt="" />
@@ -27,4 +28,4 @@ const Hero = () => {
     </Wrapper>
   )
 }
-export default Hero
+export default Home

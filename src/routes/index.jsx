@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SharedLayout from "../pages/sharedLayout";
-import Hero from "../Components/Hero/Hero";
+import Home from "../pages/Home";
+import About from "../pages/About";
 
 const RoutesMain = () => {
     return (
@@ -8,8 +9,8 @@ const RoutesMain = () => {
             <Routes>
                 <Route path="/"
                     element={<SharedLayout />}>
-                    <Route index element={<Hero />} />
-                    <Route element />
+                    <Route index element={<Home />} />
+                    <Route path="/about" element={<About />} />
                     <Route element />
                 </Route>
             </Routes>
