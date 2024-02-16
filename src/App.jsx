@@ -1,12 +1,4 @@
-import { ToastContainer } from 'react-toastify'
-import {
-  About,
-  Footer,
-  Hero,
-  Navbar,
-  Projects,
-  Sidebar
-} from './Components'
+import RoutesMain from './routes'
 
 
 
@@ -17,13 +9,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Sidebar />
-      <Hero />
-      <About />
-      <Projects />
-      <Footer />
-      <ToastContainer position='top-center'/>
+      <RoutesMain />
     </>
   )
 }

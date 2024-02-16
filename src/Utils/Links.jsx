@@ -1,22 +1,40 @@
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
-
-
+import { IoHomeSharp } from "react-icons/io5";
+import { FaUserAlt } from "react-icons/fa";
+import { MdOutlineWork } from "react-icons/md";
+import { IoCodeSlash } from "react-icons/io5";
+import { TiMessages } from "react-icons/ti";
 
 export const links = [
   {
     id: 1,
-    text: 'Sobre Mim',
-    url: '#about',
+    text: 'Home',
+    url: '#home',
+    icon: <IoHomeSharp />
   },
   {
     id: 2,
-    text: 'Projetos',
-    url: '#projects',
+    text: 'Sobre',
+    url: '#about',
+    icon: <FaUserAlt />
   },
   {
     id: 3,
+    text: 'Projetos',
+    url: '#projects',
+    icon: <MdOutlineWork />
+  },
+  {
+    id: 4,
+    text: 'Tecnologias',
+    url: '#tech',
+    icon: <IoCodeSlash />
+  },
+  {
+    id: 5,
     text: 'Contato',
     url: '#contact',
+    icon: <TiMessages />
   },
 ]
 

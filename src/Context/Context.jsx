@@ -1,4 +1,4 @@
-import { useContext, createContext, useState, useEffect } from "react";
+import { useContext, createContext, useState } from "react";
 
 
 const GlobalContext = createContext()
@@ -15,26 +15,6 @@ export const GlobalProvider = ({ children }) => {
     }
 
 
-    // IDADE
-    const [age, setAge] = useState(null)
-
-    useEffect(() => {
-        const birthDate = new Date(1999, 9, 15)
-        const today = new Date()
-
-        const hasBirthdayPassed = today.getMonth() > birthDate.getMonth()
-            || (today.getMonth() === birthDate.getMonth()
-                && today.getDate() >= birthDate.getDate())
-
-        if (hasBirthdayPassed) {
-            let age = today.getFullYear() - birthDate.getFullYear()
-            setAge(age)
-        } else {
-            let age = today.getFullYear() - birthDate.getFullYear()
-            age = age - 1
-            setAge(age)
-        }
-    }, [])
 
 
 
@@ -43,7 +23,6 @@ export const GlobalProvider = ({ children }) => {
             isSidebarOpen,
             closeSidebar,
             openSidebar,
-            age
         }}>
             {children}
         </GlobalContext.Provider>

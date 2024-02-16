@@ -1,43 +1,50 @@
-import { FaBars } from 'react-icons/fa'
-import { NavContainer } from './index'
-import logo from '../../assets/logo_3.png'
+import { Wrapper } from '../../assets/Wrappers/navbar'
 import { links } from '../../Utils/Links'
-import { useGlobalContext } from '../../Context/Context'
-import { Link } from 'react-scroll'
+import logo from "../../assets/images/logo.png"
+import { contactLinks } from '../../Utils/Links'
+
 
 
 const Navbar = () => {
 
-  const { openSidebar } = useGlobalContext()
 
   return (
-    <NavContainer>
-      <div className="nav-center">
-        <div className="nav-header">
-          <div className="logo">
-            <img src={logo} alt="logo" />
-          </div>
-          <button
-            className='nav-toggle'
-            onClick={openSidebar}>
-            <FaBars />
-          </button>
-        </div>
-        <ul className='nav-links'>
-          {links.map((link) => {
-            const { id, text, url } = link
-
-            return (
-              <li key={id}>
-                <a
-                  href={url}>
-                  {text}
-                </a>
-              </li>)
-          })}
-        </ul>
+    <Wrapper>
+      <div className='nav-header'>
+        <img src={logo} alt="" />
       </div>
-    </NavContainer>
+      <div className='nav-content'>
+        <div className="nav-center">
+          <ul className='nav-links'>
+            {links.map((link) => {
+              const { id, text, url, icon } = link
+
+              return (
+                <li key={id}>
+                  <span>{icon}</span>
+                  <a
+                    href={url}>
+                    {text}
+                  </a>
+                </li>)
+            })}
+          </ul>
+          <ul className='social-links'>
+            {contactLinks.map((link) => {
+              const { id, text, url, icon } = link
+
+              return (
+                <li key={id}>
+                  <a
+                    href={url}>
+                    <span>{icon}</span>
+                  </a>
+                </li>)
+            })}
+          </ul>
+        </div>
+      </div>
+    </Wrapper>
   )
 }
 export default Navbar
