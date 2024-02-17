@@ -12,7 +12,7 @@ import { IoIosSchool } from "react-icons/io";
 
 const About = () => {
 
-  let workIconStyles = { background: "#3b9eff" }
+  let workIconStyles = { background: "#2870bd" }
   let schoolIconStyles = { background: "#43484e" }
 
   return (
@@ -20,23 +20,25 @@ const About = () => {
     <Wrapper id="about">
       <Title text="Sobre" />
       <div className="about-content">
-        <div className="image-container">
-          <img src={icon} alt="" />
-        </div>
-        <div className="content">
-          <div className="about-text">
-            <h2 >Eu sou {" "}
-              <span className="contrast">
-                Guilherme Estevan
-              </span>
-            </h2>
-            <p>
-              Desenvolvedor web, formado em Engenharia Mecânica e cursando técnico de Desenvolvimento de sistemas.
-              Iniciei minha jornada autodidata no desenvolvimento web, onde me encantei pelo poder e versatilidade do React. Atualmente, estou aprimorando minhas habilidades por meio do Curso Técnico de Desenvolvimento de Sistemas no Senac, focado em me tornar um profissional mais completo e capacitado.
-              Especializado em tecnologias modernas como React, Node.js, TypeScript e MongoDB e desenvolvendo meus conhecimentos em Java, estou animado para aplicar meu conhecimento e contribuir para projetos inovadores. Acredito que a aprendizagem contínua é essencial para o crescimento profissional, e estou comprometido em buscar excelência no desenvolvimento web
-            </p>
+        <div className="resume">
+          <div className="image-container">
+            <img src={icon} alt="" />
+          </div>
+
+          <div className="content">
+            <div className="about-text">
+              <h2 >Eu sou {" "}
+                <span className="contrast">
+                  Guilherme Estevan
+                </span>
+              </h2>
+              <p>
+                Desenvolvedor web com formação em Engenharia Mecânica e atualmente cursando técnico de Desenvolvimento de Sistemas no Senac. Autodidata em desenvolvimento web, com foco em React, Node.js, TypeScript e MongoDB. Também estou expandindo meu conhecimento em Java. Comprometido com a aprendizagem contínua e buscando excelência no desenvolvimento web.
+              </p>
+            </div>
           </div>
         </div>
+
         <div className="timeline">
           <VerticalTimeline>
             {timelineElements.map((element) => {
@@ -52,7 +54,7 @@ const About = () => {
                   icon={isWorkIcon ? <MdOutlineWork /> : <IoIosSchool />}>
 
                   <h3 className="title">{element.title}</h3>
-                  <h5>{element.location}</h5>
+                  <h5>{element.subtitle}</h5>
                   <p>{element.description}</p>
                 </VerticalTimelineElement>
               )

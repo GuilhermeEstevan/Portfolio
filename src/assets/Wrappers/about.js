@@ -46,12 +46,22 @@ h2{
     flex-direction: column;
     align-items: center;
     width: 100%;
-  
+    max-width: var(--max-width);
+    margin:  0 auto;
     p{
         line-height: 25px;
         font-weight: 300;
     }
 }
+
+.resume{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .image-container{
     display: block;
 }
@@ -86,7 +96,7 @@ h2{
 }
 
 .title{
-    color: var(--clr-primary-10);
+    color: var(--clr-primary-8);
 }
 
 .date{

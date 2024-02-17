@@ -7,9 +7,10 @@ display: none;
 width: 20rem;
 height: 100vh;
 align-items: center;
-background: var(--clr-slate-1);
+/* background: var(--clr-slate-1); */
+background: #D9E4E8;
 color: var(--clr-slate-8);
-border-right: 1px solid var(--clr-slate-2);
+border-right: 2px solid var(--clr-slate-7);
 box-shadow: var(--shadow-3);
 justify-content: space-around;
 position: sticky;
@@ -51,7 +52,6 @@ top: 0;
   li{
     display: flex;
     align-items: center;
-    margin: 0 1rem;
     transition: var(--transition);
   } 
 
