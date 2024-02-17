@@ -1,5 +1,5 @@
 import { Wrapper } from '../assets/Wrappers/home';
-import selfie from '../assets/images/selfie.jpg'
+import selfie from '../assets/images/Selfie.jpg'
 import Typewriter from "../Utils/TypeWriter";
 import { Button } from "@radix-ui/themes"
 
