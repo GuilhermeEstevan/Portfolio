@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 }
 .title h2{
     font-family: "Poppins", sans-serif;
-    padding: 2rem;
+    padding: 3rem 3rem;
     font-size: 2.2rem;
     font-weight: 700;
     position: relative
@@ -26,15 +26,15 @@ export const Wrapper = styled.div`
 }
 
 .title h2::before {
-  top: 90%;
-  left: 15%; 
+  top: 82%;
+  left: 24%; 
   transform: translateY(-50%);
 }
 
 .title h2::after {
     
-  bottom: 20%; 
-  left: 15%; 
+  bottom: 25%; 
+  left: 24%; 
   width: 30%;
 }
 

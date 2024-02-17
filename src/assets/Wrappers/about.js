@@ -46,6 +46,11 @@ h2{
     flex-direction: column;
     align-items: center;
     width: 100%;
+  
+    p{
+        line-height: 25px;
+        font-weight: 300;
+    }
 }
 .image-container{
     display: block;
@@ -66,6 +71,26 @@ h2{
 .about-text{
     max-width: 70%;
     text-align: justify;
+}
+}
+
+
+.timeline{
+    display: flex;
+    width: 80%;
+   
+    
+
+.vertical-timeline-element-content {
+    background: var(--clr-slate-4);
+}
+
+.title{
+    color: var(--clr-primary-10);
+}
+
+.date{
+    margin: 0 1rem;
 }
 }
 

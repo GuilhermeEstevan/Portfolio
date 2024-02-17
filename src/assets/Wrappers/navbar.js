@@ -6,14 +6,14 @@ export const Wrapper = styled.nav`
 display: none;
 width: 20rem;
 height: 100vh;
-position: relative;
 align-items: center;
-background: var(--clr-primary-2);
+background: var(--clr-slate-1);
 color: var(--clr-slate-8);
 border-right: 1px solid var(--clr-slate-2);
 box-shadow: var(--shadow-3);
 justify-content: space-around;
-
+position: sticky;
+top: 0;
 
 .nav-center{
    height: 70%;
