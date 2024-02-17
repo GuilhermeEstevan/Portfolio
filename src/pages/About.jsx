@@ -1,6 +1,6 @@
 import { Wrapper } from "../assets/Wrappers/about"
 import icon from '../assets/images/code_think.svg'
-import Title from "../Components/title/title"
+import Title from "../Components/title/Title"
 import {
   VerticalTimeline,
   VerticalTimelineElement,
