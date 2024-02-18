@@ -7,6 +7,7 @@ import jobster from "../assets/images/Jobster.png"
 import backroads from "../assets/images/backroads.png"
 import ProjectBox from "../Components/Projects/ProjectBox"
 import Title from '../Components/title/Title'
+import { projectsData } from '../Components/Projects/projectLinks'
 
 const Projects = () => {
 
@@ -17,17 +18,32 @@ const Projects = () => {
     const jobsterUrl = "https://jobster-ts.netlify.app/"
     const backroadsurl = "https://backroadsapp-gui.netlify.app"
 
+
+    const unsplashRepo = 'https://github.com/GuilhermeEstevan/React---Search-Images'
+    const magnusRepo = 'https://github.com/GuilhermeEstevan/Loja-Magnus'
+    const comfyRepo = 'https://github.com/GuilhermeEstevan/comfy-sloth-TS'
+    const petLoversRepo = "https://github.com/GuilhermeEstevan/PetLovers"
+    const jobsterRepo = "https://github.com/GuilhermeEstevan/Jobster"
+    const backroadsRepo = "https://github.com/GuilhermeEstevan/temp-backrodas-app"
+
+
+
     return (
         <Wrapper id="projects">
             <Title text="Projetos" />
             <div className="projects">
                 <div className="projects-container">
-                    <ProjectBox name="Pet Lovers" imageUrl={petLovers} url={petLoversUrl} />
-                    <ProjectBox name="Comfy" imageUrl={comfy} url={comfyUrl} />
-                    <ProjectBox name="Unsplash" imageUrl={unsplash} url={unsplashUrl} />
-                    <ProjectBox name="Magnus" imageUrl={magnus} url={magnusUrl} />
-                    <ProjectBox name="Backroads" imageUrl={backroads} url={backroadsurl}/>
-                    <ProjectBox name="Jobster" imageUrl={jobster} url={jobsterUrl} />
+                    {projectsData.projects.map((project) => {
+                        const { id, name, imageUrl, url, repository } = project
+                        return (
+                            <ProjectBox
+                                key={id}
+                                name={name}
+                                imageUrl={imageUrl}
+                                url={url}
+                                repository={repository} />
+                        )
+                    })}
                 </div>
             </div>
         </Wrapper>

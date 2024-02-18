@@ -15,13 +15,13 @@ export const links = [
   {
     id: 2,
     text: 'Sobre',
-    url: 'about',
+    url: '/about',
     icon: <FaUserAlt />
   },
   {
     id: 3,
     text: 'Projetos',
-    url: 'projects',
+    url: '/projects',
     icon: <MdOutlineWork />
   },
   {

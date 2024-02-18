@@ -1,7 +1,7 @@
 import { FaGithub } from 'react-icons/fa'
 
 
-const ProjectBox = ({ name, imageUrl, url }) => {
+const ProjectBox = ({ name, imageUrl, url, repository }) => {
     return (
         <div className="project-box">
             <div className="container">
@@ -11,7 +11,7 @@ const ProjectBox = ({ name, imageUrl, url }) => {
                 <div className="project-info">
                     <span>{name}</span>
                     <span className='github'>
-                        <a href=""><FaGithub /></a>
+                        <a href={repository}><FaGithub /></a>
                     </span>
                 </div>
             </div>
