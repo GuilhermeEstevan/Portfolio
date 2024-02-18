@@ -5,17 +5,30 @@ const Wrapper = styled.section`
     display: grid;
     grid-template-columns: 1fr;
     background-color: var(--clr-primary-1);
+    position: relative;
+    /* overflow: hidden; */
   }
   .dashboard-page {
     margin: 0 auto;
-    min-height: 100vh ; 
+    min-height: 100vh; 
     position: relative;
+    color: var(--clr-slate-12);
+    animation: slideMe .6s ease-in;
   }
+
+@keyframes slideMe {
+  0%{
+    transform: translatey(600px);
+  }
+  100%{
+    transform: skew(0deg);
+  }
+}
 
   .toggle-btn{
     position: absolute;
     font-size: 2rem;
-    top: 2%;
+    top: 1%;
     right: 5%;
     color: var(--clr-slate-9);
     cursor: pointer;
