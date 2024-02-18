@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.section`
   .projects {
     margin-top: 2rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +19,7 @@ export const Wrapper = styled.section`
 
   .projects-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 
@@ -31,8 +32,8 @@ export const Wrapper = styled.section`
   }
 
   img {
-    width: 320px;
-    height: 240px;
+    width: 280px;
+    height: 200px;
   }
 
   .project-info {
@@ -46,7 +47,7 @@ export const Wrapper = styled.section`
     padding: 1rem;
 
     span {
-      /* font-weight: 500; */
+      font-weight: 700;
       font-family: "Poppins", sans-serif;
     }
 
@@ -57,5 +58,19 @@ export const Wrapper = styled.section`
         color: inherit;
       }
     }
+  }
+
+  @media (min-width: 1200px) {
+    .projects-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    img {
+    width: 320px;
+    height: 240px;
+  }
+
   }
 `;
