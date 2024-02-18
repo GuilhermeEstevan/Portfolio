@@ -23,7 +23,7 @@ const Wrapper = styled.aside`
     opacity: 1;
   }
   .content {
-    background: var(--clr-slate-1);
+    background: #D9E4E8;
     width: 100vw;
     height: 100vh;
     padding: 4rem 2rem;
@@ -33,7 +33,7 @@ const Wrapper = styled.aside`
     flex-direction: column;
 
     img{
-      width: 220px;
+      width: 240px;
       height: 220px;
  }
   }

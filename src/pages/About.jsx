@@ -12,11 +12,12 @@ import { IoIosSchool } from "react-icons/io";
 
 const About = () => {
 
-  let workIconStyles = { background: "#2870bd" }
-  let schoolIconStyles = { background: "#43484e" }
+  let workIconStyles = { background: "#43484e" }
+  let schoolIconStyles = { background: "#2870bd" }
 
   return (
 
+    
     <Wrapper id="about">
       <Title text="Sobre" />
       <div className="about-content">

@@ -1,12 +1,12 @@
 export const timelineElements = [
     {
         id: 8,
-        title: "Técnico de Desenvolvimento de Sistemas",
+        title: "Curso Técnico - Desenvolvimento de Sistemas",
         subtitle: "Abril/2023 - Presente (Cursando)",
         description:
             "Administração de Banco de Dados, POO, Algoritimos, Desenvolvimento de Software, Metodologias Ágeis.",
         date: "2023 - 2025",
-        icon: "work",
+        icon: "school",
     },
     {
         id: 1,
@@ -15,6 +15,15 @@ export const timelineElements = [
         description:
             "Programação Orientada a Objetos, JPA, Integração com Bancos de Dados, Protocolos HTTP e Spring Security.",
         date: "2024",
+        icon: "school",
+    },
+    {
+        id: 9,
+        title: "PetLovers - Freelance",
+        subtitle: "Setembro/2023 - Presente (Projeto)",
+        description:
+            "Projeto FullStack desenvolvido com React, NodeJS e MongoDB. Desenvolvendo este projeto, pude consolidar e fortalecer todos os conhecimentos adquiridos, um marco significativo no meu percurso profissional",
+        date: "2023",
         icon: "work",
     },
     {
@@ -24,7 +33,7 @@ export const timelineElements = [
         description:
             "API REST, Roteamento de Endpoints, Middlewares , Integração com Bancos de Dados e Gerenciamento de Autenticação e Autorização",
         date: "2023",
-        icon: "work",
+        icon: "school",
     },
     {
         id: 3,
@@ -33,7 +42,7 @@ export const timelineElements = [
         description:
             "Recursos de tipagem estática, Interface e outros recursos modernos para facilitar o desenvolvimento de aplicativos escaláveis.",
         date: "2023",
-        icon: "work",
+        icon: "school",
     },
     {
         id: 4,
@@ -42,7 +51,7 @@ export const timelineElements = [
         description:
             "Componentes reutilizáveis, Gerenciamento de Estado de forma eficiente, Rotas, Chamadas de API, Protocolos HTTP.",
         date: "2023",
-        icon: "work",
+        icon: "school",
     },
     {
         id: 5,

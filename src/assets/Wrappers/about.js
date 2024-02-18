@@ -22,6 +22,7 @@ color: var(--clr-slate-12);
     text-align: center;
     line-height: 1.7rem;
     padding: 3rem 0;
+    max-width: 70%;
 }
 
 h2{
@@ -85,9 +86,17 @@ h2{
 }
 
 
+
+
+
+
+
+
+
+
 .timeline{
     display: flex;
-    width: 80%;
+    width: 90%;
    
     
 
@@ -104,5 +113,32 @@ h2{
 }
 }
 
+
+@media (min-width: 992px) {
+
+.timeline{
+    display: flex;
+    width: 80%;
+   
+    
+
+.vertical-timeline-element-content {
+    background: var(--clr-slate-4);
+}
+
+h3{
+    font-size: 1.7rem;
+}
+
+.title{
+    color: var(--clr-primary-8);
+}
+
+.date{
+    margin: 0 1rem;
+}
+}
+
+}
 
 `
