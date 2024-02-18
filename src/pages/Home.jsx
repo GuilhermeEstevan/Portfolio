@@ -2,12 +2,11 @@ import { Wrapper } from '../assets/Wrappers/home';
 import selfie from '../assets/images/Selfie.jpg'
 import Typewriter from "../Utils/TypeWriter";
 import { Button } from "@radix-ui/themes"
-
 const Home = () => {
 
 
   return (
-    <Wrapper>
+    <Wrapper >
       <div className="hero-content">
         <div className="content">
           <h4>Olá, meu nome é <span className="contrast signature">Guilherme Estevan</span></h4>

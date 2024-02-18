@@ -33,7 +33,7 @@
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
   --spacing: 0.1rem;
-  --radius: 0.25rem;
+  --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --transition: 0.3s ease-in-out all;
@@ -184,4 +184,16 @@ p {
   text-align: center;
 }
 
+/* .hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 2s;
+  transform: translateX(-1000px);
+}
 
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 2s;
+  transform: translateX(0);
+} */

@@ -8,6 +8,7 @@ export const Wrapper = styled.section`
   background-color: var(--clr-primary-1);
   text-align: center;
 
+
   .hero-content {
     width: 100%;
     display: flex;

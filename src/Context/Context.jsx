@@ -14,6 +14,8 @@ export const GlobalProvider = ({ children }) => {
         setIsSidebarOpen(true)
     }
 
+    const [isVisible, setIsVisible] = useState(false)
+
 
 
 
@@ -23,6 +25,8 @@ export const GlobalProvider = ({ children }) => {
             isSidebarOpen,
             closeSidebar,
             openSidebar,
+            isVisible,
+            setIsVisible
         }}>
             {children}
         </GlobalContext.Provider>
