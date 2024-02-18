@@ -16,6 +16,7 @@ const Wrapper = styled.section`
   .dashboard-page {
     margin: 0 auto;
     min-height: 100vh; 
+    min-height: 100vh; 
     position: relative;
     color: var(--clr-slate-12);
     animation: slideMe .6s ease-in;
@@ -37,6 +38,7 @@ const Wrapper = styled.section`
   .toggle-btn{
     position: absolute;
     font-size: 2rem;
+    top: 1%;
     top: 1%;
     right: 5%;
     color: var(--clr-slate-9);
