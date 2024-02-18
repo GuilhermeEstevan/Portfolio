@@ -7,7 +7,6 @@ display: none;
 width: 20rem;
 height: 100vh;
 align-items: center;
-/* background: var(--clr-slate-1); */
 background: #D9E4E8;
 color: var(--clr-slate-8);
 border-right: 2px solid var(--clr-slate-7);

@@ -10,17 +10,20 @@ const SharedLayout = () => {
 
   const { openSidebar } = useGlobalContext()
 
+
   return (
     <Wrapper>
       <main className="dashboard">
         <SmallSidebar />
-        <Navbar />
-        <div>
+        <Navbar className="navbar" />
+        <div className="container">
           <div className="dashboard-page">
             <span className="toggle-btn" onClick={openSidebar}>
               <TiThMenu />
             </span>
+
             <Outlet />
+
           </div>
         </div>
       </main>

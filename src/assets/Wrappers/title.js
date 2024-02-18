@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
+width: 100%;
 
 .title{
     text-align: start;
@@ -10,7 +11,7 @@ export const Wrapper = styled.div`
 }
 .title h2{
     font-family: "Poppins", sans-serif;
-    padding: 1rem 1rem;
+    padding: 3rem 1rem;
     font-size: 1.5rem;
     font-weight: 700;
     position: relative

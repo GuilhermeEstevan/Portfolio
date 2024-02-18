@@ -5,7 +5,7 @@ import { contactLinks } from '../../Utils/Links'
 
 
 
-const Navbar = () => {
+const Navbar = ({ toggleOutlet }) => {
 
 
   return (
@@ -23,7 +23,8 @@ const Navbar = () => {
                 <li key={id}>
                   <span>{icon}</span>
                   <a
-                    href={url}>
+                    href={url}
+                    onClick={toggleOutlet}>
                     {text}
                   </a>
                 </li>)

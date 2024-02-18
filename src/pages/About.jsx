@@ -10,6 +10,7 @@ import timelineElements from "../Components/timeline/TimelineElements"
 import { MdOutlineWork } from "react-icons/md";
 import { IoIosSchool } from "react-icons/io";
 
+
 const About = () => {
 
   let workIconStyles = { background: "#43484e" }
@@ -17,7 +18,7 @@ const About = () => {
 
   return (
 
-    
+
     <Wrapper id="about">
       <Title text="Sobre" />
       <div className="about-content">
