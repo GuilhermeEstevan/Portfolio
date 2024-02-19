@@ -27,7 +27,7 @@ export const links = [
   {
     id: 4,
     text: 'Tecnologias',
-    url: 'tech',
+    url: 'technologies',
     icon: <IoCodeSlash />
   },
   {

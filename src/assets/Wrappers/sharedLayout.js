@@ -18,7 +18,7 @@ const Wrapper = styled.section`
     min-height: 100vh;
     position: relative;
     color: var(--clr-slate-12);
-    animation: slideMe .8s ease-in;
+    animation: slideMe .4s ease-in;
   }
 
   @keyframes slideMe {
