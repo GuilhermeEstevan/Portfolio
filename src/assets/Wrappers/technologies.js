@@ -48,7 +48,7 @@ export const Wrapper = styled.section`
       gap: 2rem;
     }
     .technology {
-      padding: 2rem 4rem;
+      padding: 2rem 3rem;
 
       img {
         width: 90px;
@@ -57,9 +57,13 @@ export const Wrapper = styled.section`
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .technologies-container {
       grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .technology {
+      padding: 2rem 4rem;
     }
   }
 `;

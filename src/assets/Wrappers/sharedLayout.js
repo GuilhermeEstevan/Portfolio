@@ -18,13 +18,13 @@ const Wrapper = styled.section`
     min-height: 100vh;
     position: relative;
     color: var(--clr-slate-12);
-    animation: slideMe .4s ease-in;
+    animation: slideMe .3s ease-in;
   }
 
   @keyframes slideMe {
     0% {
       transform: translateY(1000px);
-      filter: blur(2px);
+      filter: blur(5px);
       opacity: 0;
     }
     100% {
