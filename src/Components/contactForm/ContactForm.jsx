@@ -1,24 +1,40 @@
 import { Box, TextField, Button } from "@mui/material";
 import { FormHelperText } from "@mui/material";
-import { useForm as hookForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { useForm as formspreeForm } from "@formspree/react";
+import { toast } from "sonner";
+import { useEffect, useState } from "react";
 
 const ContactForm = () => {
   const [state, submit] = formspreeForm("xknadrwy");
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = hookForm();
+  const form = useForm({
+    defaultValues: {
+      name: "",
+      email: "",
+      title: "",
+      message: "",
+    },
+  });
 
-  const onSubmit = (data) => {
-    console.log(data);
-    submit(data);
-    if (state.succeeded) {
-      // Toast
+  const { register, handleSubmit, formState, reset } = form;
+  const { errors } = formState;
+
+  const onSubmit = async (data) => {
+    try {
+      console.log(data);
+      await submit(data);
+      reset({ name: "", email: "", title: "", message: "" });
+    } catch (error) {
+      toast.error("Error no envio, tente novamente");
     }
   };
+
+  useEffect(() => {
+    if (state.succeeded) {
+      toast.success("Mensagem Enviada! Entrarei em contato");
+    }
+  }, [state]);
 
   return (
     <Box className="form-box">
@@ -26,7 +42,6 @@ const ContactForm = () => {
         <TextField
           {...register("name", { required: true })}
           error={!!errors.name}
-          required
           className="form-field"
           fullWidth
           margin="normal"
@@ -44,7 +59,6 @@ const ContactForm = () => {
         <TextField
           {...register("email", { required: true })}
           error={!!errors.email}
-          required
           className="form-field"
           fullWidth
           margin="normal"
@@ -63,7 +77,6 @@ const ContactForm = () => {
         <TextField
           {...register("title", { required: true })}
           error={!!errors.title}
-          required
           className="form-field"
           fullWidth
           margin="normal"
@@ -81,7 +94,6 @@ const ContactForm = () => {
         <TextField
           {...register("message", { required: true })}
           error={!!errors.message}
-          required
           className="form-field"
           fullWidth
           margin="normal"
@@ -106,7 +118,7 @@ const ContactForm = () => {
           variant="contained"
           sx={{ mt: 2 }}
         >
-          Enviar Mensagem
+          {state.submitting ? "Enviando..." : "Enviar Mensagem"}
         </Button>
       </form>
     </Box>

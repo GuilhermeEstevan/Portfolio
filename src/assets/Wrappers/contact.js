@@ -63,6 +63,7 @@ export const Wrapper = styled.div`
     padding: 1rem 2rem;
     border-radius: 2rem;
     transition: var(--transition);
+    text-transform: capitalize;
   }
 
   & .MuiOutlinedInput-root {
@@ -93,6 +94,7 @@ export const Wrapper = styled.div`
       gap: 1rem;
       flex-direction: column;
       align-items: center;
+      color: var(--clr-slate-11);
 
       a {
         text-decoration: none;
