@@ -70,6 +70,14 @@ html {
   box-sizing: border-box;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
+  display: block !important;
+}
+
 body {
   font-family: Roboto, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell,
     "Open Sans", "Helvetica Neue", sans-serif;

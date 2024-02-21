@@ -7,8 +7,6 @@ import { IoLocationSharp } from "react-icons/io5";
 import ContactForm from "../Components/contactForm/ContactForm";
 
 const Contact = () => {
- 
-
   return (
     <Wrapper>
       <Title text="contato" />
@@ -18,7 +16,7 @@ const Contact = () => {
         </div>
         <div className="social-links">
           <div className="social">
-            <a href="">
+            <a href="https://wa.me/5581997311453" target="_blank">
               <span>
                 <FaWhatsapp />
               </span>
@@ -28,7 +26,7 @@ const Contact = () => {
           </div>
 
           <div className="social">
-            <a href="">
+            <a href="mailto:guilhermeestevangui@hotmail.com" target="_blank">
               <span>
                 <MdEmail />
               </span>
@@ -38,7 +36,7 @@ const Contact = () => {
           </div>
 
           <div className="social">
-            <a href="">
+            <a href="https://www.google.com/maps/place/Recife" target="_blank">
               <span>
                 <IoLocationSharp />
               </span>

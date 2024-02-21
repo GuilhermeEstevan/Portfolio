@@ -54,14 +54,16 @@ export const Wrapper = styled.nav`
       transform: scale(1.2);
     }
 
-    a {
-      text-decoration: none;
+    .nav-link {
+      display: flex;
+      align-items: center;
       font-weight: 600;
       color: var(--clr-slate-10);
       letter-spacing: 0.2rem;
       padding: 0.5rem;
       text-transform: capitalize;
       transition: var(--transition);
+      gap: 8px;
     }
 
     span {

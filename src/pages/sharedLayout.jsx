@@ -2,14 +2,11 @@ import Wrapper from "../assets/Wrappers/sharedLayout";
 import Navbar from "../Components/Navbar/Navbar";
 import { Outlet } from "react-router-dom";
 import SmallSidebar from "../Components/smallSideBar/SmallSidebar";
-import { TiThMenu } from "react-icons/ti"
+import { TiThMenu } from "react-icons/ti";
 import { useGlobalContext } from "../Context/Context";
 
-
 const SharedLayout = () => {
-
-  const { openSidebar } = useGlobalContext()
-  
+  const { openSidebar } = useGlobalContext();
 
 
   return (
@@ -24,7 +21,6 @@ const SharedLayout = () => {
             </span>
 
             <Outlet />
-
           </div>
         </div>
       </main>

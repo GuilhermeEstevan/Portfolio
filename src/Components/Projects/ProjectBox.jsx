@@ -1,22 +1,22 @@
-import { FaGithub } from 'react-icons/fa'
-
+import { FaGithub } from "react-icons/fa";
 
 const ProjectBox = ({ name, imageUrl, url, repository }) => {
-    return (
-        <div className="project-box">
-            <div className="container">
-                <a href={url} target="blank">
-                    <img src={imageUrl} alt="" />
-                </a>
-                <div className="project-info">
-                    <span>{name}</span>
-                    <span className='github'>
-                        <a href={repository}><FaGithub /></a>
-                    </span>
-                </div>
-            </div>
-
+  return (
+    <div className="project-box">
+      <div className="container">
+        <a href={url} target="_blank">
+          <img src={imageUrl} alt="" />
+        </a>
+        <div className="project-info">
+          <span>{name}</span>
+          <span className="github">
+            <a href={repository} target="_blank">
+              <FaGithub />
+            </a>
+          </span>
         </div>
-    )
-}
-export default ProjectBox
+      </div>
+    </div>
+  );
+};
+export default ProjectBox;
