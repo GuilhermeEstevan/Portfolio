@@ -60,7 +60,7 @@ export const Wrapper = styled.div`
     display: flex;
     color: #b0b4ba;
     background: var(--clr-primary-6);
-    padding: 1rem 2rem;
+    padding: 8px 2rem;
     border-radius: 2rem;
     transition: var(--transition);
     text-transform: capitalize;

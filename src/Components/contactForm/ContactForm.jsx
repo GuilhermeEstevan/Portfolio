@@ -25,16 +25,11 @@ const ContactForm = () => {
       console.log(data);
       await submit(data);
       reset({ name: "", email: "", title: "", message: "" });
+      toast.success("Mensagem Enviada! Entrarei em contato");
     } catch (error) {
       toast.error("Error no envio, tente novamente");
     }
   };
-
-  useEffect(() => {
-    if (state.succeeded) {
-      toast.success("Mensagem Enviada! Entrarei em contato");
-    }
-  }, [state]);
 
   return (
     <Box className="form-box">
@@ -53,9 +48,6 @@ const ContactForm = () => {
           }}
           sx={{ input: { color: "#b0b4ba" } }}
         />
-        {errors.name && (
-          <FormHelperText error>{errors.name.message}</FormHelperText>
-        )}
         <TextField
           {...register("email", { required: true })}
           error={!!errors.email}
@@ -71,9 +63,6 @@ const ContactForm = () => {
           }}
           sx={{ input: { color: "#b0b4ba" } }}
         />
-        {errors.name && (
-          <FormHelperText error>{errors.name.message}</FormHelperText>
-        )}
         <TextField
           {...register("title", { required: true })}
           error={!!errors.title}
@@ -88,9 +77,6 @@ const ContactForm = () => {
           }}
           sx={{ input: { color: "#b0b4ba" } }}
         />
-        {errors.name && (
-          <FormHelperText error>{errors.name.message}</FormHelperText>
-        )}
         <TextField
           {...register("message", { required: true })}
           error={!!errors.message}
@@ -109,9 +95,6 @@ const ContactForm = () => {
             style: { color: "#b0b4ba" },
           }}
         />
-        {errors.name && (
-          <FormHelperText error>{errors.name.message}</FormHelperText>
-        )}
         <Button
           className="button"
           type="submit"
