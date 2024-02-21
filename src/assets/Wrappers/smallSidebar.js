@@ -33,6 +33,7 @@ const Wrapper = styled.aside`
     img {
       width: 240px;
       height: 220px;
+      margin-top: -2rem;
     }
   }
 
@@ -55,31 +56,41 @@ const Wrapper = styled.aside`
   .nav-links {
     height: 100%;
     display: flex;
-    gap: 2rem;
+    align-items: center;
+    gap: 1rem;
     flex-direction: column;
     justify-content: center;
     color: var(--clr-slate-8);
     transition: var(--transition);
 
     li {
+      width: 200px;
+      border: 1px solid var(--clr-slate-11);
+      padding: 3px;
+      border-radius: var(--radius);
       display: flex;
+      justify-content: center;
       align-items: center;
       margin: 0 1rem;
       transition: var(--transition);
+      text-decoration: none;
+      color: var(--clr-slate-10);
+      letter-spacing: 0.2rem;
+      padding: 0.5rem;
+      text-transform: capitalize;
+      transition: var(--transition);
+      gap: 8px;
     }
 
     li:hover {
       transform: scale(1.2);
     }
 
-    a {
-      text-decoration: none;
+    .icon {
+    }
+
+    .text {
       font-weight: 600;
-      color: var(--clr-slate-10);
-      letter-spacing: 0.2rem;
-      padding: 0.5rem;
-      text-transform: capitalize;
-      transition: var(--transition);
     }
 
     span {
