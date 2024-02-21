@@ -33,7 +33,7 @@ const Wrapper = styled.aside`
     img {
       width: 240px;
       height: 220px;
-      margin-top: -2rem;
+      margin-top: -3rem;
     }
   }
 
@@ -54,6 +54,7 @@ const Wrapper = styled.aside`
   }
 
   .nav-links {
+    margin-top: -1rem;
     height: 100%;
     display: flex;
     align-items: center;
@@ -97,6 +98,17 @@ const Wrapper = styled.aside`
       font-size: 1.2rem;
       display: flex;
       margin-right: 3px;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: start;
+    font-size: 1.5rem;
+    gap: 2.5rem;
+
+    a {
+      color: var(--clr-slate-8);
     }
   }
 `;

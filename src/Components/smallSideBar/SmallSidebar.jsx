@@ -1,4 +1,4 @@
-import { links } from "../../Utils/Links";
+import { contactLinks, links } from "../../Utils/Links";
 import Wrapper from "../../assets/Wrappers/smallSidebar";
 import logo from "../../assets/images/logo.png";
 import { MdOutlineClose } from "react-icons/md";
@@ -34,6 +34,19 @@ const SmallSidebar = () => {
                     <span className="text">{text}</span>
                   </li>
                 </Link>
+              );
+            })}
+          </ul>
+          <ul className="social-links">
+            {contactLinks.map((link) => {
+              const { id, text, url, icon } = link;
+
+              return (
+                <li key={id}>
+                  <a href={url}>
+                    <span>{icon}</span>
+                  </a>
+                </li>
               );
             })}
           </ul>
