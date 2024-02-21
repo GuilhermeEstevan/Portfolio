@@ -11,6 +11,7 @@ export const Wrapper = styled.section`
 
   .hero-content {
     width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -58,7 +59,7 @@ export const Wrapper = styled.section`
     }
 
     .about-btn {
-      margin-top: 2rem;
+      margin-top: 1rem;
       font-weight: 600;
       font-size: 1rem;
       width: 130px;

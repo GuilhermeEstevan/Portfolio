@@ -7,8 +7,8 @@ import { useGlobalContext } from "../Context/Context";
 
 const SharedLayout = () => {
   const { openSidebar } = useGlobalContext();
-
-
+  
+ 
   return (
     <Wrapper>
       <main className="dashboard">
