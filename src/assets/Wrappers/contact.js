@@ -14,14 +14,16 @@ export const Wrapper = styled.div`
     width: 100%;
     margin-top: 4rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
   }
 
   .social {
     display: flex;
-    gap: 1rem;
+    gap: 2px;
     flex-direction: column;
     align-items: center;
 
@@ -32,31 +34,35 @@ export const Wrapper = styled.div`
     }
 
     .title {
-      font-size: 1.3rem;
+      font-size: 1rem;
       font-weight: 600;
     }
 
     .info {
-      font-size: 1rem;
+      margin-top: 2px;
+      font-size: 0.8rem;
     }
+  }
+
+  .form-box {
+    width: var(--fluid-width);
+    max-width: var(--max-width);
+    padding: 1rem 0;
   }
 
   .form-field {
     background: var(--clr-primary-2);
     border-radius: var(--radius);
- 
+    border: none;
   }
 
   .button {
+    display: flex;
     color: #b0b4ba;
     background: var(--clr-primary-6);
-    border-radius: var(--radius);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
     transition: var(--transition);
-  }
-  .button:hover {
-    color: #b0b4ba; 
-    transform: scale(1.1);
-    background: var(--clr-primary-6);
   }
 
   & .MuiOutlinedInput-root {
@@ -65,4 +71,43 @@ export const Wrapper = styled.div`
     }
   }
 
+  .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border: none;
+  }
+
+  @media (min-width: 768px) {
+    .social-links {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 962px) {
+    .form-box {
+      max-width: var(--max-width);
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .social {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: var(--clr-primary-6);
+      }
+
+      .title {
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+
+      .info {
+        font-size: 1rem;
+      }
+    }
+  }
 `;
