@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.nav`
   display: none;
   width: 20rem;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   background: #d9e4e8;
   color: var(--clr-slate-8);
@@ -15,7 +15,7 @@ export const Wrapper = styled.nav`
   z-index: 1000;
 
   .nav-center {
-    height: 70%;
+    /* height: 70%; */
     display: flex;
     flex-direction: column;
   }
